@@ -192,11 +192,11 @@ MAX_CORRECTION_LOOPS = 3  # Nombre maximum d'itérations
 
 ##  Optimisations Implémentées
 
-✅ **Cache des embeddings** - Accélère les recherches vectorielles
-✅ **Hiérarchie des sources** - Priorise les documents officiels
-✅ **Validation croisée** - Vérifie les objectifs pédagogiques
-✅ **Templates adaptatifs** - Gabarits selon niveau et matière
-✅ **Système de citations** - Référence les pages sources
+ **Cache des embeddings** - Accélère les recherches vectorielles
+**Hiérarchie des sources** - Priorise les documents officiels
+ **Validation croisée** - Vérifie les objectifs pédagogiques
+ **Templates adaptatifs** - Gabarits selon niveau et matière
+ **Système de citations** - Référence les pages sources
 
 ##  Structure du Projet
 
