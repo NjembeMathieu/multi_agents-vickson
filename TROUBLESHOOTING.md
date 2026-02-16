@@ -39,7 +39,7 @@ google.api_core.exceptions.Unauthenticated: 401 Invalid API key
 cat .env
 
 # Devrait contenir:
-GOOGLE_API_KEY=AIzaSyDYOBkjZyt3ehIToK_KyC5i5VC7TpzzBF4
+GOOGLE_API_KEY=secret
 
 # Si absent ou incorrect, éditer .env
 nano .env  # ou vim, code, etc.
