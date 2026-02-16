@@ -1,8 +1,8 @@
-# 📚 Générateur de Fiches de Cours Multi-Agents
+#  Générateur de Fiches de Cours Multi-Agents
 
 Système intelligent de génération automatique de fiches de cours basé sur une architecture multi-agents utilisant LangGraph et Gemini AI.
 
-## 🎯 Fonctionnalités
+##  Fonctionnalités
 
 - ✅ **Génération automatique** de fiches de cours conformes aux programmes officiels
 - ✅ **Architecture multi-agents** avec 6 agents spécialisés
@@ -14,7 +14,7 @@ Système intelligent de génération automatique de fiches de cours basé sur un
 - ✅ **Recherche vectorielle** pour réutilisation de fiches existantes
 - ✅ **Boucle de correction** intelligente avec maximum 3 itérations
 
-## 🏗️ Architecture Multi-Agents
+##  Architecture Multi-Agents
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -42,31 +42,31 @@ Système intelligent de génération automatique de fiches de cours basé sur un
 
 ### Les 6 Agents Spécialisés
 
-1. **Agent Context** 🎯
+1. **Agent Context** 
    - Validation des données d'entrée
    - Identification du cycle d'enseignement
    - Enrichissement du contexte local
    - Détection de la nécessité d'une situation-problème
 
-2. **Agent Program** 📖
+2. **Agent Program** 
    - Extraction des référentiels officiels
    - Accès au corpus (Informatique & Mathématiques)
    - Détermination du gabarit (court/moyen/étendu)
    - Gestion des objectifs pédagogiques
 
-3. **Agent Similarité** 🔍
+3. **Agent Similarité** 
    - Recherche vectorielle de fiches existantes
    - Cache des embeddings pour performance
    - Décision adaptation vs création complète
    - Seuil de similarité : 90%
 
-4. **Agent Writer** ✍️
+4. **Agent Writer** 
    - Génération de contenu via Gemini 1.5 Flash
    - Création de situations-problèmes ancrées localement
    - Adaptation de fiches existantes
    - Corrections itératives basées sur la validation
 
-5. **Agent Validation** ✅
+5. **Agent Validation** 
    - Contrôle de conformité aux objectifs
    - Vérification de la structure
    - Seuils adaptatifs par cycle :
@@ -75,38 +75,20 @@ Système intelligent de génération automatique de fiches de cours basé sur un
      - Universitaire : 80%
    - Génération de rapports de correction
 
-6. **Agent Export** 📄
+6. **Agent Export** 
    - Export Markdown (édition facile)
    - Export JSON (intégration système)
    - Export HTML (visualisation/impression)
    - Horodatage et métadonnées
 
-## 📋 Prérequis
+##  Prérequis
 
 - Python 3.10+
 - Clé API Google Gemini
-- Environnement virtuel `.venv` (déjà créé dans votre projet)
+- Environnement virtuel `.venv` (
 
-## 🚀 Installation
+##  Installation
 
-### 1. Installation des dépendances
-
-```bash
-# Activer l'environnement virtuel
-source .venv/bin/activate
-
-# Installer les dépendances
-pip install -r requirements.txt
-```
-
-### 2. Configuration
-
-La clé API Gemini est déjà configurée dans `.env`. Si vous devez la modifier :
-
-```bash
-# Éditer le fichier .env
-GOOGLE_API_KEY=votre_cle_api_ici
-```
 
 ### 3. Structure du Corpus
 
@@ -126,25 +108,12 @@ Corpus/
 
 **Formats supportés :** PDF, TXT
 
-## 🎮 Utilisation
+##  Utilisation
 
-### Méthode 1 : Script de démarrage (Recommandé)
-
-```bash
-chmod +x run.sh
-./run.sh
-```
-
-### Méthode 2 : Démarrage manuel
-
-```bash
-source .venv/bin/activate
-streamlit run app.py
-```
 
 L'application sera accessible sur : **http://localhost:8501**
 
-## 📝 Workflow de Génération
+##  Workflow de Génération
 
 1. **Saisie des informations**
    - Établissement, ville, année scolaire
@@ -164,7 +133,7 @@ L'application sera accessible sur : **http://localhost:8501**
    - Aperçu de la fiche générée
    - Rapport de validation détaillé
 
-## 🎓 Cas d'Usage
+##  Cas d'Usage
 
 ### Exemple 1 : Fiche avec Corpus (Secondaire - Mathématiques)
 
@@ -199,7 +168,7 @@ Volume horaire: 5h
 3. Gabarit étendu (5h+)
 4. Valide avec seuil 80%
 
-## ⚙️ Configuration Avancée
+##  Configuration Avancée
 
 ### Seuils de Validation
 
@@ -219,15 +188,9 @@ VALIDATION_THRESHOLDS = {
 MAX_CORRECTION_LOOPS = 3  # Nombre maximum d'itérations
 ```
 
-### Modèle Gemini
 
-```python
-GEMINI_MODEL = "gemini-1.5-flash"  # ou "gemini-1.5-pro"
-GEMINI_TEMPERATURE = 0.7
-GEMINI_MAX_TOKENS = 8192
-```
 
-## 📊 Optimisations Implémentées
+##  Optimisations Implémentées
 
 ✅ **Cache des embeddings** - Accélère les recherches vectorielles
 ✅ **Hiérarchie des sources** - Priorise les documents officiels
@@ -235,12 +198,12 @@ GEMINI_MAX_TOKENS = 8192
 ✅ **Templates adaptatifs** - Gabarits selon niveau et matière
 ✅ **Système de citations** - Référence les pages sources
 
-## 📁 Structure du Projet
+##  Structure du Projet
 
 ```
 multi-agents-vickson/
-├── .venv/                      # Environnement virtuel (existant)
-├── Corpus/                     # Documents de référence (existant)
+├── .venv/                      
+├── Corpus/                     # Documents de référence 
 │   ├── Informatique/
 │   └── Mathématiques/
 ├── agents/                     # Agents IA
@@ -262,56 +225,22 @@ multi-agents-vickson/
 ├── config.py                   # Configuration
 ├── requirements.txt            # Dépendances
 ├── .env                        # Variables d'environnement
-├── run.sh                      # Script de démarrage
-└── README.md                   # Ce fichier
+├── run.sh                      
+└── README.md                   
 ```
 
-## 🐛 Dépannage
 
-### Erreur : Module not found
 
-```bash
-pip install -r requirements.txt
-```
-
-### Erreur : API Key invalide
-
-Vérifiez votre clé Gemini dans `.env` :
-```bash
-GOOGLE_API_KEY=AIzaSy...
-```
-
-### Corpus vide
+### Si Corpus vide
 
 Placez vos PDFs dans `Corpus/Informatique/` ou `Corpus/Mathématiques/`
 
-### Port 8501 occupé
 
-```bash
-streamlit run app.py --server.port 8502
-```
+##  Licence
 
-## 📈 Évolutions Futures
+Projet académique - Master 2025/2026
 
-- [ ] Support de plus de matières dans le Corpus
-- [ ] Génération d'exercices interactifs
-- [ ] Export au format SCORM
-- [ ] Intégration avec LMS (Moodle, Canvas)
-- [ ] API REST pour intégration externe
-- [ ] Traduction multi-langues
-- [ ] Génération de QCM automatiques
-- [ ] Analyse de progression élèves
 
-## 📄 Licence
+Projet Tutoré - Master 2025/2026
 
-Projet académique - Master 2024/2025
 
-## 👤 Auteur
-
-**Vickson Njembe**
-
-Projet Tutoré - Master 2024/2025
-
----
-
-**Note :** Ce système respecte les référentiels officiels et génère des fiches conformes aux programmes d'enseignement. Les situations-problèmes sont contextualisées selon la ville pour un meilleur ancrage pédagogique.
