@@ -1,0 +1,106 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+.venv.bak/
+env.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Output files - Plus spécifique
+output/
+*.chroma
+*.chroma.db
+*.chroma.sqlite3
+
+# VectorStore
+vectorstore/
+chroma.sqlite3
+*.chroma
+chroma/
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Streamlit
+.streamlit/
+.streamlit/secrets.toml
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+.cache/
+
+# Data/Corpus - À GARDER LOCAL
+Corpus/
+data/
+datasets/
+*.pdf
+*.PDF
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.csv
+*.CSV
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Notebooks (sans les outputs)
+.ipynb_checkpoints/
+*.ipynb
+!*.ipynb  # Si vous voulez garder les notebooks vides
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose*.yml
+
+# Keep empty directories structure
+!.gitkeep
+!output/.gitkeep
+!vectorstore/.gitkeep
+!Corpus/.gitkeep
+!data/.gitkeep
