@@ -4,15 +4,15 @@ Système intelligent de génération automatique de fiches de cours basé sur un
 
 ##  Fonctionnalités
 
-- ✅ **Génération automatique** de fiches de cours conformes aux programmes officiels
-- ✅ **Architecture multi-agents** avec 6 agents spécialisés
-- ✅ **Ancrage local** - Les situations-problèmes sont contextualisées selon la ville
-- ✅ **Validation automatique** avec seuils adaptatifs par cycle
-- ✅ **Corpus de référence** pour Informatique et Mathématiques (Secondaire)
-- ✅ **Export multi-formats** (Markdown, JSON, HTML)
-- ✅ **Interface Streamlit** intuitive pour les professeurs
-- ✅ **Recherche vectorielle** pour réutilisation de fiches existantes
-- ✅ **Boucle de correction** intelligente avec maximum 3 itérations
+-  **Génération automatique** de fiches de cours conformes aux programmes officiels
+-  **Architecture multi-agents** avec 6 agents spécialisés
+-  **Ancrage local** - Les situations-problèmes sont contextualisées selon la ville
+-  **Validation automatique** avec seuils adaptatifs par cycle
+-  **Corpus de référence** pour Informatique et Mathématiques (Secondaire)
+-  **Export multi-formats** (Markdown, JSON, HTML)
+- **Interface Streamlit** intuitive pour les professeurs
+-  **Recherche vectorielle** pour réutilisation de fiches existantes
+-  **Boucle de correction** intelligente avec maximum 3 itérations
 
 ##  Architecture Multi-Agents
 
